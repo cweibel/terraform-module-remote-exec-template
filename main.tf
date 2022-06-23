@@ -29,7 +29,7 @@ resource "null_resource" "configure_bosh_rds" {
       host        = var.host
     }
   }
-
+}
 
 output "rendered_file_contents"      {value = data.template_file.myfile.rendered }
 output "rendered_file_location"      {value = "${var.rendered_file_destination}/${var.rendered_file_name}" }
